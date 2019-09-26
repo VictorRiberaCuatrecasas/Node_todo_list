@@ -11,7 +11,7 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://admin_victor:007barbarian@cluster0-nnubx.mongodb.net/todolistDB", { useNewUrlParser: true }); //change pass and acc
+mongoose.connect("mongodb+srv://userAndPass@cluster0-nnubx.mongodb.net/todolistDB", { useNewUrlParser: true }); //change pass and acc
 
 const itemsSchema = {
   name: String
